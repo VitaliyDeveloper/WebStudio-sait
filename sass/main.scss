@@ -2,11 +2,19 @@
 @import './base/container';
 @import './base/section';
 
+@import './components/title';
 @import './components/logo';
 @import './components/navbar';
+@import './components/social-list';
 
 
 @import './layout/header';
+@import './layout/heroes';
+@import './layout/about-us';
+@import './layout/portfolio';
+@import './layout/our-work';
+@import './layout/our-command';
+@import './layout/our-client';
 
 @import './utils/variables';
 @import './utils/visually-hidden';

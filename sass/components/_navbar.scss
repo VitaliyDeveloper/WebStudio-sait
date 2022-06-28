@@ -18,21 +18,90 @@
       line-height: 0;
     }
 }
-
+// -----TABLET------------------------------------
 @media screen and (min-width: 768px) {
   .menu,
   .head-contact__tel,
   .head-contact__mail {
     display: flex;
   }
+  .navbar {
+    display: flex;
+    align-items: center;
+    margin-right: 84px;
+  }
+  .logo {
+    margin-right: 88px;
+  }
+  .menu__item:not(:last-child) {
+    margin-right: 50px;
+  }
+  .menu__link {
+    position: relative;
+    display: block;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    padding-top: 32px;
+      padding-bottom: 32px;
+    color: #212121;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      &:hover,
+      &:focus {
+        color: var(--highlight-text-color);
+      }
+  }
+  .current-link {
+    color: var(--highlight-text-color);
+      &::after {
+        content: ' ';
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        bottom: 0;
+        background: var(--highlight-text-color);
+        border-radius: 2px;
+      }
+  }
+  .head-contact__mail,
+  .head-contact__tel {
+    display: flex;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    color: #757575;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      &:hover,
+      &:hover,
+      &:focus,
+      &:focus {
+        color: var(--highlight-text-color);
+      }
+  }
+  .icon-contact {
+    width: 14px;
+    height: 14px;
+    margin-right: 8px;
+    fill: #757575;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      .head-contact__mail:hover &,
+      .head-contact__tel:hover &,
+      .head-contact__mail:focus &,
+      .head-contact__tel:focus & {
+        fill: var(--highlight-text-color);
+      }
+  }
 }
 
+// -----DESCTOP------------------------------------
+
 @media screen and (min-width: 1200px) {
-  .navbar {
-      display: flex;
-      align-items: center;
-    }
-    
+     
     .logo {
       margin-right: 93px;
     }
@@ -40,11 +109,7 @@
     .menu {
       display: flex;
     }
-    
-    .menu__item:not(:last-child) {
-      margin-right: 50px;
-    }
-    
+        
     .menu__link {
       position: relative;
       display: block;
@@ -112,21 +177,5 @@
       width: 16px;
       height: 16px;
       margin-right: 10px;
-      fill: #757575;
-      transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        
-        .head-contact__mail:hover &,
-        .head-contact__tel:hover &,
-        .head-contact__mail:focus &,
-        .head-contact__tel:focus & {
-          fill: var(--highlight-text-color);
-        }
     }
-
-  
 }
-
-
-
-    
-  

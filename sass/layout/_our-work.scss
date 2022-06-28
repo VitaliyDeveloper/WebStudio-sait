@@ -1,0 +1,41 @@
+.our-work-section__list {
+    display: flex;
+    margin-top: -30px;
+  }
+  
+  .our-work-section__item {
+    flex-basis: calc((100% - 90px) / 3);
+    margin-top: 30px;
+    position: relative;
+    
+      &:not(:nth-child(3n)) {
+        margin-right: 30px;
+      }
+  }
+    
+  .our-work-section__title {
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+  }
+  
+  .our-work-section__div-we-do {
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(47, 48, 58, 0.8);
+  }
+  
+  .div-we-do__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding: 27px;
+  }
