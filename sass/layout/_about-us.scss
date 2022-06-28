@@ -73,12 +73,11 @@ color: #757575;
  .about-us-section__item {
     margin-top: 30px;
     width: 354px;
+ }
     
-    // $:not(:nth-child(2n)) {
-    //   margin-right: 30px;
-    // }
-  }
- 
+ .about-us-section__item:not(:nth-child(2n)) {
+      margin-right: 30px;
+    }
 }
 
 @media screen and (min-width: 1200px) {

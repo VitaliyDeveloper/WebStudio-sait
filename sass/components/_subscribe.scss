@@ -1,0 +1,104 @@
+// -----------MOBILE---------------------------------
+
+@media screen and (min-width: 480px) {
+  .subscribe-form {
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .subscribe-text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+    }
+
+    .subscribe-input {
+      width: 360px;
+      height: 50px;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+      border-radius: 4px;
+      padding-left: 16px;
+      
+      margin-bottom: 20px;
+      background-color: transparent;
+      color: #ffffff;
+      transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+          
+        &:hover,
+        &:focus {
+          border-color: var(--highlight-text-color);
+        }
+    }
+    .subscribe-btn-container {
+      position: relative;
+      width: 200px;
+      height: 50px;
+    }
+        
+    .subscribe-btn {
+      display: block;
+      align-items: center;
+      background: var(--highlight-text-color);
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+      border-radius: 4px;
+      padding: 10px 30px;
+      max-height: 50px;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 1.8;
+      letter-spacing: 0.06em;
+      color: #FFFFFF;
+      cursor: pointer;
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        
+        &:hover {
+          background-color: #188ce8;
+        }
+    }
+        
+    .subscribe-icon {
+      width: 24px;
+      height: 24px;
+      margin-left: 10px;
+      vertical-align: middle;
+    }
+}
+
+
+// -----------TABLET---------------------------------
+
+@media screen and (min-width: 768px) {
+.subscribe-container {
+  width: 100%;
+}
+.subscribe-input {
+  width: 450px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+}
+
+// -----------DESCTOP---------------------------------
+
+@media screen and (min-width: 1200px) {
+     
+  .subscribe-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+      
+  .subscribe-input {
+    margin-right: 12px;
+    margin-bottom: 0px;
+   }
+}
+
+
