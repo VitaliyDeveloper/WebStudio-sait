@@ -1,3 +1,12 @@
 @import './base/base';
 @import './base/container';
 @import './base/section';
+
+@import './components/logo';
+@import './components/navbar';
+
+
+@import './layout/header';
+
+@import './utils/variables';
+@import './utils/visually-hidden';
