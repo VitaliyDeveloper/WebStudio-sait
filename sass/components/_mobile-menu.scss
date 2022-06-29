@@ -23,6 +23,11 @@ position: relative;
 padding: 48px 40px;
 }
 
+.mobile-menu-open-btn-icon:hover {
+    fill: var(--highlight-text-color);
+
+}
+
 .mobile-menu__nav-container{
 margin-bottom: 270px;
 }
@@ -106,6 +111,9 @@ color: #757575;
 
 @media screen and (min-width: 768px) {
     .mobile-menu-open-btn {
+        display: none;
+    }
+    .mobile-menu {
         display: none;
     }
 }

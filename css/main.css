@@ -108,14 +108,28 @@ img {
   color: #2196f3;
 }
 
-.page-header__logo {
-  text-decoration: none;
-  font-family: var(--secondary-font);
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
-  color: black;
+@media screen and (min-width: 480px) {
+  .page-header__logo {
+    text-decoration: none;
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: calc(28 / 24 * 100%);
+    letter-spacing: 0.03em;
+    color: black;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .page-header__logo {
+    text-decoration: none;
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: black;
+  }
 }
 
 .head-contact__tel,
@@ -161,7 +175,7 @@ img {
     display: block;
     font-weight: 500;
     font-size: 14px;
-    line-height: 1.1;
+    line-height: calc(16 / 14 * 100%);
     letter-spacing: 0.02em;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -188,8 +202,8 @@ img {
   .head-contact__tel {
     display: flex;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.1;
+    font-size: 12px;
+    line-height: calc(14 / 12 * 100%);
     letter-spacing: 0.02em;
     color: #757575;
     padding-top: 10px;
@@ -770,6 +784,10 @@ img {
   padding: 48px 40px;
 }
 
+.mobile-menu-open-btn-icon:hover {
+  fill: var(--highlight-text-color);
+}
+
 .mobile-menu__nav-container {
   margin-bottom: 270px;
 }
@@ -847,6 +865,9 @@ img {
   .mobile-menu-open-btn {
     display: none;
   }
+  .mobile-menu {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 480px) {
@@ -912,6 +933,12 @@ img {
   padding-bottom: 16px;
 }
 
+@media screen and (min-width: 480px) {
+  .head-contact {
+    display: none;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .mobile-menu-open-btn {
     display: none;
@@ -919,11 +946,17 @@ img {
   .header-container {
     padding-bottom: 0;
   }
+  .head-contact {
+    display: block;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .header-container {
     padding-bottom: 0;
+  }
+  .head-contact {
+    display: flex;
   }
 }
 
