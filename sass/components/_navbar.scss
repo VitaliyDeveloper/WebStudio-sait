@@ -1,13 +1,13 @@
-.head-contact__tel,
-.head-contact__mail {
-  display: none;
-}
 
 .mobile-menu-open-btn-icon {
-    fill: #212121;
-  }
+  fill: #212121;
+}
 
 @media screen and (max-width: 767px) {
+  .head-contact__tel,
+  .head-contact__mail {
+    display: none;
+  }
     .menu {
       display: none;
     }

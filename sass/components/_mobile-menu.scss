@@ -24,6 +24,7 @@ padding: 48px 40px;
 }
 
 .mobile-menu-open-btn-icon:hover {
+    cursor: pointer;
     fill: var(--highlight-text-color);
 
 }
@@ -40,6 +41,11 @@ margin-bottom: 270px;
     border: none;
     line-height: 0;
     padding: 0;
+    cursor: pointer;
+}
+
+.mobile-menu__close-btn:hover {
+    fill: var(--highlight-text-color);
 }
 
 .current-link {
