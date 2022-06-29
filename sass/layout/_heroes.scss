@@ -1,9 +1,13 @@
 @media screen and (min-width:480px) {
+  @media (min-device-pixel-ratio:2) , (min-resolution: 192dpl), (min-resolution: 2dppx) {
+    .heroes {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/mobile/heroes-mob.jpg);
+  }
+  }
   .heroes {
     background-color: var(--accent-color);
     padding-top: 118px;
     padding-bottom: 118px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/heroes.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -11,6 +15,7 @@
     margin-right: auto;
     margin-left: auto;
   }
+  
   .heroes__title {
     font-weight: 900;
     font-size: 26px;
@@ -19,7 +24,7 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #ffffff;
-    }
+  }
     .heroes__btn {
       background: #2196f3;
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -37,31 +42,41 @@
       margin: 30px auto 0;
       border: none;
       transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-     
-        &:hover,
-        &:focus {
-          background-color: #188ce8;
-        }
+      
+      &:hover,
+      &:focus {
+        background-color: #188ce8;
+      }
     }
-}
-
-@media screen and (min-width:768px) {
-  .heroes {
-    max-width: 1199px;
+  }
+  
+  @media screen and (min-width:768px) {
+    @media (min-device-pixel-ratio:2) , (min-resolution: 192dpl), (min-resolution: 2dppx) {
+      .heroes {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/tablet/heroes-tab.jpg);
     }
-  .heroes__title {
-    font-size: 26px;
-    line-height: calc(42 / 26 * 100%);
     }
-}
-
-@media screen and (min-width:1200px) {
-  .heroes {
+    .heroes {
+      max-width: 1199px;
+    }
+    .heroes__title {
+      font-size: 26px;
+      line-height: calc(42 / 26 * 100%);
+    }
+  }
+  
+  @media screen and (min-width:1200px) {
+    @media (min-device-pixel-ratio:2) , (min-resolution: 192dpl), (min-resolution: 2dppx) {
+        .heroes {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/desctop/heroes-desk.jpg);
+      }
+      }
+    .heroes {
       max-width: 1600px;
     }
     
-  .heroes__title {
-    font-size: 44px;
+    .heroes__title {
+      font-size: 44px;
     line-height: 1.3;
   }
 }
