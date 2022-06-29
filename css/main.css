@@ -886,7 +886,7 @@ img {
 @media screen and (min-width: 768px) {
   .main-btn {
     justify-content: center;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
   }
   .btn-item {
     margin-bottom: 0px;
@@ -1170,6 +1170,22 @@ img {
   .portfolio-img-link:hover .overlay {
     opacity: 1;
     transform: translate(0, 0);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .portfolio-photo {
+    width: 354px;
+  }
+  .portfolio-item:not(:nth-child(2n)) {
+    margin-right: 30px;
+  }
+  .border-portfolio-first {
+    padding-bottom: 56px;
   }
 }
 

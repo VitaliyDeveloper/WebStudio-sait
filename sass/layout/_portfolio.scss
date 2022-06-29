@@ -81,8 +81,22 @@
 // -----------TABLET---------------------------------
 
 @media screen and (min-width: 768px) {
-
+  .portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .portfolio-photo {
+    width: 354px;
+  }
+  .portfolio-item:not(:nth-child(2n)) {
+    margin-right: 30px;
+  }
+  .border-portfolio-first {
+    padding-bottom: 56px;
+    
+    }
 }
+
 
 // -----------DESCTOP---------------------------------
 
@@ -96,12 +110,4 @@
     .portfolio-item:not(:nth-child(3n)) {
       margin-right: 30px;
     }
-    
-  
-    
-   
-    
-// ----overlay------------------------
-
-   
 }
