@@ -43,7 +43,7 @@
     }
         
     .subscribe-btn {
-      display: block;
+      display: flex;
       align-items: center;
       background: var(--highlight-text-color);
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -88,17 +88,25 @@
 // -----------DESCTOP---------------------------------
 
 @media screen and (min-width: 1200px) {
-     
+  .subscribe-container {
+    max-width: 48%;
+  }
+  
   .subscribe-form {
     display: flex;
+    flex-wrap: nowrap;
     align-items: center;
-    justify-content: center;
+    
   }
       
   .subscribe-input {
+    width: 358px;
+    margin-left: 0px;
     margin-right: 12px;
     margin-bottom: 0px;
-   }
+  }
+
+  
 }
 
 

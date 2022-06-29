@@ -22,11 +22,14 @@ footer {
 // -----------DESCTOP---------------------------------
 
 @media screen and (min-width: 1200px) {
-  
+  .footer-container__logo {
+    width: 231px;
+  }
   .footer-container {
     display: flex;
     text-align: left;
     align-items: baseline;
+    
   }
 }
 
