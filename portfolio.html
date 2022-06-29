@@ -31,22 +31,27 @@
           >
           <ul class="list menu">
             <li class="menu__item">
-              <a class="menu__link link" href="index.html">Студия</a>
+              <a class="menu__link current-link link" href="index.html"
+                >Студия</a
+              >
             </li>
             <li class="menu__item">
-              <a class="menu__link current-link link" href="portfolio.html"
-                >Портфолио</a
-              >
+              <a class="menu__link link" href="portfolio.html">Портфолио</a>
             </li>
             <li class="menu__item">
               <a class="menu__link link" href="#">Контакты</a>
             </li>
           </ul>
         </nav>
+        <button class="mobile-menu-open-btn" type="button" data-menu-open>
+          <svg class="mobile-menu-open-btn-icon" width="40" height="40">
+            <use href="./images/sprites-svg.svg#icon-menu"></use>
+          </svg>
+        </button>
         <ul class="head-contact list">
           <li class="head-contact__item">
             <a class="head-contact__mail link" href="mailto:info@devstudio.com">
-              <svg class="icon-contact">
+              <svg class="icon-contact" width="14" height="14">
                 <use href="./images/sprites-svg.svg#icon-mail"></use>
               </svg>
               info@devstudio.com</a
@@ -54,7 +59,7 @@
           </li>
           <li class="head-contact__item">
             <a class="head-contact__tel link" href="tel:+380961111111"
-              ><svg class="icon-contact">
+              ><svg class="icon-contact" width="14" height="14">
                 <use href="./images/sprites-svg.svg#icon-phone"></use>
               </svg>
               +38 096 111 11 11</a
@@ -62,12 +67,86 @@
           </li>
         </ul>
       </div>
+      <div class="mobile-menu is-open" data-menu>
+        <div class="container mobile-menu__container">
+          <button type="button" class="mobile-menu__close-btn" data-menu-close>
+            <svg class="mobile-menu__close-icon" width="40" height="40">
+              <use href="./images/sprites-svg.svg#icon-close-black"></use>
+            </svg>
+          </button>
+          <div class="mobile-menu__nav-container">
+            <ul class="mobile-menu__list mobile-menu__list-nav list">
+              <li class="mobile-menu__item-nav">
+                <a
+                  class="mobile-menu__link-nav current-link link"
+                  href="index.html"
+                  >Студия</a
+                >
+              </li>
+              <li class="mobile-menu__item-nav">
+                <a class="mobile-menu__link-nav link" href="portfolio.html"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="mobile-menu__item-nav">
+                <a class="mobile-menu__link-nav link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </div>
+          <div class="mobile-menu__contact-container">
+            <ul class="mobile-menu__list mobile-menu__list-contact list">
+              <li class="mobile-menu__item">
+                <a class="mobile-menu__tel link" href="tel:+380961111111"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+              <li class="mobile-menu__item">
+                <a
+                  class="mobile-menu__mail link"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="mobile-menu__list mobile-menu__list-social list">
+              <li class="mobile-menu__item-social">
+                <a
+                  class="mobile-menu__link-facebook mobile-menu__link-social current-link link"
+                  href="#"
+                  >Instagram</a
+                >
+              </li>
+              <li class="mobile-menu__item-social">
+                <a
+                  class="mobile-menu__link-twitter mobile-menu__link-social link"
+                  href="#"
+                  >Twitter</a
+                >
+              </li>
+              <li class="mobile-menu__item-social">
+                <a
+                  class="mobile-menu__link-facebook mobile-menu__link-social link"
+                  href="#"
+                  >Facebook</a
+                >
+              </li>
+              <li class="mobile-menu__item-social">
+                <a
+                  class="mobile-menu__link-linkedin mobile-menu__link-social link"
+                  href="#"
+                  >LinkedIn</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </header>
 
     <!--MAIN-->
     <main>
       <!--PORTFOLIO-->
-      <section class="portfolio-section section">
+      <section class="portfolio-sewebpon section">
         <div class="container">
           <ul class="list main-btn">
             <li class="btn-item">
@@ -93,7 +172,7 @@
                 <div class="overlay-container">
                   <img
                     class="portfolio-photo"
-                    src="./images/portfolio/sait-technocrack.jpg"
+                    src="./images/portfolio/sait-technocrack.webp"
                     alt="Технокряк"
                     width="370"
                     height="294"
@@ -118,7 +197,7 @@
                 <div class="overlay-container">
                   <img
                     class="portfolio-photo"
-                    src="./images/portfolio/design-poster.jpg"
+                    src="./images/portfolio/design-poster.webp"
                     alt="Постер New Orlean vs Golden Star"
                     width="370"
                     height="294"
@@ -146,7 +225,7 @@
                 <div class="overlay-container">
                   <img
                     class="portfolio-photo"
-                    src="./images/portfolio/app-restaurant.jpg"
+                    src="./images/portfolio/app-restaurant.webp"
                     alt="Ресторан Seafood"
                     width="370"
                     height="294"
@@ -173,7 +252,7 @@
                 <div class="overlay-container">
                   <img
                     class="portfolio-photo"
-                    src="./images/portfolio/market-prime.jpg"
+                    src="./images/portfolio/market-prime.webp"
                     alt="Проект Prime"
                     width="370"
                     height="294"
@@ -199,7 +278,7 @@
                 <div class="overlay-container">
                   <img
                     class="portfolio-photo"
-                    src="./images/portfolio/app-boxes.jpg"
+                    src="./images/portfolio/app-boxes.webp"
                     alt="Проект Boxes"
                     width="370"
                     height="294"
@@ -225,7 +304,7 @@
                 <div class="overlay-container">
                   <img
                     class="portfolio-photo"
-                    src="./images/portfolio/sait-no-borders.jpg"
+                    src="./images/portfolio/sait-no-borders.webp"
                     alt="Inspiration has no Borders"
                     width="370"
                     height="294"
@@ -251,7 +330,7 @@
                 <div class="overlay-container">
                   <img
                     class="portfolio-photo"
-                    src="./images/portfolio/design-limited-edition.jpg"
+                    src="./images/portfolio/design-limited-edition.webp"
                     alt="Издание Limited Edition"
                     width="370"
                     height="294"
@@ -277,7 +356,7 @@
                 <div class="overlay-container">
                   <img
                     class="portfolio-photo"
-                    src="./images/portfolio/market-lab.jpg"
+                    src="./images/portfolio/market-lab.webp"
                     alt="Проект LAB"
                     width="370"
                     height="294"
@@ -303,7 +382,7 @@
                 <div class="overlay-container">
                   <img
                     class="portfolio-photo"
-                    src="./images/portfolio/app-growing-business.jpg"
+                    src="./images/portfolio/app-growing-business.webp"
                     alt="Growing Business"
                     width="370"
                     height="294"
@@ -419,5 +498,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
