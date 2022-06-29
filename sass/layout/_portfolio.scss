@@ -93,10 +93,12 @@
   }
   .border-portfolio-first {
     padding-bottom: 56px;
-    
-    }
-}
+  }
 
+  .overlay {
+    width: 354px;
+  }
+  }
 
 // -----------DESCTOP---------------------------------
 
@@ -106,7 +108,18 @@
       flex-wrap: wrap;
       margin-top: -30px;
     }
-        
+
+    .portfolio-photo {
+      width: 370px;
+    }
+    .overlay {
+      width: 370px;
+    }
+    
+    .portfolio-item:not(:nth-child(2n)) {
+      margin-right: 0px;
+    }
+     
     .portfolio-item:not(:nth-child(3n)) {
       margin-right: 30px;
     }
