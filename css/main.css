@@ -709,8 +709,7 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 528px;
-  height: 581px;
+  width: 90%;
   background-color: #FFFFFF;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -751,7 +750,7 @@ img {
 
 .contact-form-title {
   font-weight: 700;
-  font-size: 20px;
+  font-size: 15px;
   line-height: 1.1;
   text-align: center;
   letter-spacing: 0.03em;
@@ -791,7 +790,7 @@ img {
 }
 
 .contact-form-field-title-checkbox {
-  font-size: 14px;
+  font-size: 10px;
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: #757575;
@@ -899,6 +898,21 @@ img {
   cursor: pointer;
   align-self: center;
   margin-top: 30px;
+}
+
+@media screen and (min-width: 480px) {
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 528px;
+    height: 581px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    padding: 40px;
+  }
 }
 
 .mobile-menu {
