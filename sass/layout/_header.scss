@@ -24,15 +24,14 @@
       padding-bottom: 0;
     }
     .head-contact {
-      display: block;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: left;
     }
-  }
+   }
 
   @media screen and (min-width: 1200px) {
     .header-container {
       padding-bottom: 0;
-    }
-    .head-contact {
-      display: flex;
     }
   }

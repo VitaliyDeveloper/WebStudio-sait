@@ -113,8 +113,14 @@ color: #757575;
  .about-us-section__item:not(:nth-child(2n)) {
       margin-right: 30px;
     }
+
+    .about-us-section__description {
+      text-align: left;
+    } 
 }
 
+
+//----------------------DESCTOP--------------------
 @media screen and (min-width: 1200px) {
   .about-us-section {
     padding-top: 94px;

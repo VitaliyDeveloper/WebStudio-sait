@@ -197,9 +197,10 @@ img {
   .head-contact__mail,
   .head-contact__tel {
     display: flex;
+    align-items: center;
     font-weight: 500;
     font-size: 12px;
-    line-height: calc(14 / 12 * 100%);
+    line-height: 0;
     letter-spacing: 0.02em;
     color: #757575;
     padding-top: 10px;
@@ -214,8 +215,6 @@ img {
     color: var(--highlight-text-color);
   }
   .icon-contact {
-    width: 14px;
-    height: 14px;
     margin-right: 8px;
     fill: #757575;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -805,8 +804,7 @@ img {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contact-form-input:hover,
-.contact-form-input:focus {
+.contact-form-input:hover, .contact-form-input:focus {
   outline: none;
   border-color: var(--highlight-text-color);
   cursor: pointer;
@@ -828,8 +826,7 @@ img {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contact-form-massage:hover,
-.contact-form-massage:focus {
+.contact-form-massage:hover, .contact-form-massage:focus {
   outline: none;
   border-color: var(--highlight-text-color);
   cursor: pointer;
@@ -898,6 +895,32 @@ img {
   cursor: pointer;
   align-self: center;
   margin-top: 30px;
+}
+
+@media screen and (min-width: 480px) {
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 450px;
+    height: 609px;
+    transform: translate(-50%, -50%);
+    background-color: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    padding: 40px;
+  }
+  .contact-form-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: calc(30 / 20 * 100%);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+  }
+  .contact-form-field-title-checkbox {
+    font-size: 12px;
+  }
 }
 
 @media screen and (min-width: 480px) {
@@ -1144,16 +1167,15 @@ img {
     padding-bottom: 0;
   }
   .head-contact {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .header-container {
     padding-bottom: 0;
-  }
-  .head-contact {
-    display: flex;
   }
 }
 
@@ -1400,6 +1422,9 @@ img {
   .about-us-section__item:not(:nth-child(2n)) {
     margin-right: 30px;
   }
+  .about-us-section__description {
+    text-align: left;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1630,16 +1655,13 @@ img {
   margin-bottom: 16px;
 }
 
-.our-command-section__item {
-  min-width: 300px;
-}
-
 .our-command-section__photo {
   width: 100%;
   height: 100%;
 }
 
 .our-command-section__item {
+  width: 100%;
   flex-basis: calc((100% - 120px) / 4);
   margin-top: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1695,7 +1717,7 @@ img {
   }
   .our-command-wraper {
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 24px;
     padding-left: 10px;
     padding-right: 10px;
     background-color: #ffffff;
@@ -1716,6 +1738,14 @@ img {
   }
   .our-command-section__item:not(:nth-child(2n)) {
     margin-right: 30px;
+  }
+  .our-command-section__item {
+    width: 354px;
+    height: 536px;
+    flex-basis: calc((100% - 120px) / 4);
+    margin-top: 30px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
   }
 }
 
@@ -1741,6 +1771,13 @@ img {
   }
   .our-command-section__item:not(:nth-child(4n)) {
     margin-right: 30px;
+  }
+  .our-command-wraper {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #ffffff;
   }
 }
 

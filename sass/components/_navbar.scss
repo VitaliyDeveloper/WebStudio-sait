@@ -68,9 +68,10 @@
   .head-contact__mail,
   .head-contact__tel {
     display: flex;
+    align-items: center;
     font-weight: 500;
     font-size: 12px;
-    line-height: calc(14 / 12 * 100%);
+    line-height: 0;
     letter-spacing: 0.02em;
     color: #757575;
     padding-top: 10px;
@@ -84,8 +85,6 @@
       }
   }
   .icon-contact {
-    width: 14px;
-    height: 14px;
     margin-right: 8px;
     fill: #757575;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -96,6 +95,7 @@
         fill: var(--highlight-text-color);
       }
   }
+ 
 }
 
 // -----DESCTOP------------------------------------
