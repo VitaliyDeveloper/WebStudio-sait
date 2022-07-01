@@ -10,19 +10,21 @@
   .logo_color {
     color: #2196f3;
   }
-
+  .page-header__logo {
+    text-decoration: none;
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 22px;
+    line-height: calc(28 / 24 * 100%);
+    letter-spacing: 0.03em;
+    color: black;
+  }
 
 // -----------MOBILE---------------------------------
 
 @media screen and (min-width: 480px) {
   .page-header__logo {
-    text-decoration: none;
-    font-family: var(--secondary-font);
-    font-weight: 700;
     font-size: 24px;
-    line-height: calc(28 / 24 * 100%);
-    letter-spacing: 0.03em;
-    color: black;
   }
   }
 
@@ -37,13 +39,8 @@
 
 @media screen and (min-width: 1200px) {
   .page-header__logo {
-    text-decoration: none;
-    font-family: var(--secondary-font);
-    font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
-    letter-spacing: 0.03em;
-    color: black;
   }
 }
 

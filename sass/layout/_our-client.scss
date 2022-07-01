@@ -1,3 +1,50 @@
+.our-client__title{
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(33 / 26 * 100%);
+  text-align: center;
+  letter-spacing: 0.03em;
+} 
+
+.our-client__link {
+  display: flex;
+  width: 210px;
+  height: 92px;
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+    &:hover,
+    &:focus {
+      border: 1px solid var(--highlight-text-color);
+    }
+}
+.our-client__icon {
+  fill: #AFB1B8;
+  width: 106px;
+  height: 60px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    .our-client__link:hover &,
+    .our-client__link:focus & {
+      fill: var(--highlight-text-color);
+    }
+}
+
+.our-client__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.our-client__item:last-of-type {
+  margin-bottom: 0px;
+}
+
+
+//-------------MOBILE---------------------------
 @media screen and (min-width: 480px) {
   .our-client__title{
     font-weight: 700;

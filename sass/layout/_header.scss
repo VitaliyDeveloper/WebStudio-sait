@@ -9,11 +9,11 @@
     padding-top: 16px;
     padding-bottom: 16px;
   }
+  .head-contact {
+    display: none;
+  }
 
   @media screen and (min-width: 480px) {
-    .head-contact {
-      display: none;
-    }
   }
 
   @media screen and (min-width: 768px) {
@@ -29,7 +29,7 @@
   }
 
   @media screen and (min-width: 1200px) {
-        .header-container {
+    .header-container {
       padding-bottom: 0;
     }
     .head-contact {
