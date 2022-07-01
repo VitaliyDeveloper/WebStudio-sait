@@ -12,7 +12,7 @@
     z-index: 100;
 }
 
-.mobile-menu .is-open {
+.mobile-menu.is-open {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
@@ -60,7 +60,7 @@ margin-bottom: 270px;
 
 .mobile-menu__list-nav {
     font-weight: 500;
-    font-size: 40px;
+    font-size: 30px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #212121;
@@ -79,7 +79,7 @@ margin-bottom: 270px;
 
 .mobile-menu__list-contact{
     font-weight: 500;
-    font-size: 34px;
+    font-size: 24px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     margin-bottom: 32px;
@@ -91,7 +91,7 @@ color: var(--highlight-text-color);
 
 .mobile-menu__mail {
 font-weight: 500;
-font-size: 24px;
+font-size: 14px;
 line-height: 1.2;
 letter-spacing: 0.02em;
 color: #757575;
@@ -108,8 +108,8 @@ color: #757575;
     display: flex;
     align-items: center;
     font-weight: 500;
-    font-size: 18px;
-    line-height: 22px;
+    font-size: 10px;
+    line-height: calc(22 / 18 * 100%);
     letter-spacing: 0.02em;
    }
 
@@ -118,6 +118,49 @@ color: #757575;
     margin-right: 10px;
     border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
+
+//---------------MOBILE-------------------------
+
+@media screen and (min-width: 480px) {
+    .mobile-menu__list-nav {
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        color: #212121;
+    } 
+
+    //==================mobile-menu__list-contact
+
+.mobile-menu__list-contact{
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    margin-bottom: 32px;
+}
+
+.mobile-menu__mail {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #757575;
+    }
+
+// ===============mobile-menu__link-social    
+.mobile-menu__list-social {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: calc(22 / 18 * 100%);
+    letter-spacing: 0.02em;
+   }
+   
+}
+
+//---------------TABLET-------------------------
 
 @media screen and (min-width: 768px) {
     .mobile-menu-open-btn {

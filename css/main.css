@@ -929,7 +929,7 @@ img {
   z-index: 100;
 }
 
-.mobile-menu .is-open {
+.mobile-menu.is-open {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
@@ -975,7 +975,7 @@ img {
 
 .mobile-menu__list-nav {
   font-weight: 500;
-  font-size: 40px;
+  font-size: 30px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #212121;
@@ -991,7 +991,7 @@ img {
 
 .mobile-menu__list-contact {
   font-weight: 500;
-  font-size: 34px;
+  font-size: 24px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   margin-bottom: 32px;
@@ -1003,7 +1003,7 @@ img {
 
 .mobile-menu__mail {
   font-weight: 500;
-  font-size: 24px;
+  font-size: 14px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #757575;
@@ -1017,8 +1017,8 @@ img {
   display: flex;
   align-items: center;
   font-weight: 500;
-  font-size: 18px;
-  line-height: 22px;
+  font-size: 10px;
+  line-height: calc(22 / 18 * 100%);
   letter-spacing: 0.02em;
 }
 
@@ -1026,6 +1026,38 @@ img {
   padding-right: 10px;
   margin-right: 10px;
   border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+@media screen and (min-width: 480px) {
+  .mobile-menu__list-nav {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #212121;
+  }
+  .mobile-menu__list-contact {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    margin-bottom: 32px;
+  }
+  .mobile-menu__mail {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #757575;
+  }
+  .mobile-menu__list-social {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: calc(22 / 18 * 100%);
+    letter-spacing: 0.02em;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1566,6 +1598,10 @@ img {
   padding: 27px;
 }
 
+.our-command-section {
+  background-color: var(--secondary-accent-color);
+}
+
 .our-command-section__title {
   font-weight: 700;
   font-size: 24px;
@@ -1600,7 +1636,7 @@ img {
 
 .our-command-section__photo {
   width: 100%;
-  height: 300px;
+  height: 100%;
 }
 
 .our-command-section__item {
@@ -1684,9 +1720,6 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
-  .our-command-section {
-    background-color: var(--secondary-accent-color);
-  }
   .our-command-section__title {
     text-align: center;
     letter-spacing: 0.03em;
