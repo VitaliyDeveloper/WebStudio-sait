@@ -85,7 +85,6 @@
   .portfolio-list {
     display: flex;
     flex-wrap: wrap;
-    
   }
   .portfolio-photo {
     width: 354px;
@@ -95,13 +94,16 @@
     margin-right: 30px;
 }
 
-// .portfolio-item-first {
-  
-// }
-
-// .portfolio-item {
-//   width: 354px;
-// }
+.portfolio-item {
+  display: flex;
+}
+.portfolio-img-link {
+  display: flex;
+  flex-direction: column;
+}
+.border-portfolio {
+  flex-grow: 1;
+}
 
 .overlay {
   width: 354px;

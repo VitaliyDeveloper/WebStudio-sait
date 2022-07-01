@@ -1595,6 +1595,16 @@ img {
   .portfolio-item:not(:nth-child(2n)) {
     margin-right: 30px;
   }
+  .portfolio-item {
+    display: flex;
+  }
+  .portfolio-img-link {
+    display: flex;
+    flex-direction: column;
+  }
+  .border-portfolio {
+    flex-grow: 1;
+  }
   .overlay {
     width: 354px;
   }
