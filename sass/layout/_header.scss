@@ -13,15 +13,19 @@
     display: none;
   }
 
+
+//----------------MOBILE------------------
   @media screen and (min-width: 480px) {
   }
 
+//----------------TABLET------------------
   @media screen and (min-width: 768px) {
     .mobile-menu-open-btn {
       display: none;
     }
     .header-container {
-      padding-bottom: 0;
+      padding-bottom: 0px;
+      padding-top: 0px;
     }
     .head-contact {
       display: flex;
@@ -30,8 +34,7 @@
     }
    }
 
+//----------------DESKTOP------------------
   @media screen and (min-width: 1200px) {
-    .header-container {
-      padding-bottom: 0;
-    }
+    
   }

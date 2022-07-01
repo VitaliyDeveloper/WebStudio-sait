@@ -49,7 +49,8 @@
       background-color: #188ce8;
     }
   }
- 
+
+//----------------MOBILE--------------------------
 @media screen and (min-width: 480px) {
   .heroes {
     background-color: var(--accent-color);
@@ -102,7 +103,8 @@
       }
     }
 }
-  
+
+//--------------TABLET--------------------------------  
 @media screen and (min-width:768px) {
     .heroes {
       background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet/heroes-tab.jpg);
@@ -118,9 +120,12 @@
       line-height: calc(42 / 26 * 100%);
     }
 }
-  
+
+//--------------DESCTOP-----------------------------
   @media screen and (min-width:1200px) {
     .heroes {
+      padding-top: 200px;
+      padding-bottom: 200px;
       max-width: 1600px;
       background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/desctop/heroes-desk.jpg);
     }
@@ -135,3 +140,4 @@
       line-height: 1.3;
   }
 }
+

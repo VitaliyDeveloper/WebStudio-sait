@@ -1164,18 +1164,13 @@ img {
     display: none;
   }
   .header-container {
-    padding-bottom: 0;
+    padding-bottom: 0px;
+    padding-top: 0px;
   }
   .head-contact {
     display: flex;
     flex-wrap: wrap;
     justify-content: left;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .header-container {
-    padding-bottom: 0;
   }
 }
 
@@ -1306,6 +1301,8 @@ img {
 
 @media screen and (min-width: 1200px) {
   .heroes {
+    padding-top: 200px;
+    padding-bottom: 200px;
     max-width: 1600px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/desctop/heroes-desk.jpg);
   }
