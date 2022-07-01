@@ -1185,7 +1185,6 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  max-width: 767px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -1238,7 +1237,6 @@ img {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    max-width: 767px;
     margin-right: auto;
     margin-left: auto;
   }
@@ -1352,13 +1350,29 @@ img {
 }
 
 .about-us-section__item {
-  margin-top: 20px;
   width: 100%;
 }
 
+.about-us-section__item:not(:first-child) {
+  margin-top: 30px;
+}
+
 .about-us-section__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14 * 100%);
   text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #212121;
   margin-bottom: 10px;
+}
+
+.about-us-section__description {
+  font-size: 14px;
+  line-height: calc(24 / 14 * 100%);
+  letter-spacing: 0.03em;
+  color: #757575;
 }
 
 @media screen and (min-width: 480px) {
@@ -1381,19 +1395,11 @@ img {
     background: #F5F4FA;
     border-radius: 4px;
   }
-  .about-us-section__title {
-    text-align: center;
-    margin-bottom: 10px;
-  }
-  .about-us-section__description {
-    font-size: 14px;
-    line-height: calc(24 / 14 * 100%);
-    letter-spacing: 0.03em;
-    color: #757575;
-  }
   .about-us-section__item {
-    margin-top: 30px;
     width: 450px;
+  }
+  .about-us-section__item:not(:first-child) {
+    margin-top: 30px;
   }
 }
 
@@ -1416,8 +1422,10 @@ img {
     margin-bottom: 10px;
   }
   .about-us-section__item {
-    margin-top: 30px;
     width: 354px;
+  }
+  .about-us-section__item:nth-child(-n+2) {
+    margin-top: 0px;
   }
   .about-us-section__item:not(:nth-child(2n)) {
     margin-right: 30px;
@@ -1436,11 +1444,13 @@ img {
     display: flex;
   }
   .about-us-section__item {
-    margin-top: 0px;
     width: 270px;
   }
   .about-us-section__item:not(:last-child) {
     margin-right: 30px;
+  }
+  .about-us-section__item:nth-child(n+2) {
+    margin-top: 0px;
   }
   .about-us-section__div-icon {
     display: flex;
@@ -1562,9 +1572,6 @@ img {
   }
   .portfolio-item:not(:nth-child(2n)) {
     margin-right: 30px;
-  }
-  .border-portfolio-first {
-    padding-bottom: 56px;
   }
   .overlay {
     width: 354px;
