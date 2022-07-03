@@ -6,8 +6,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-bottom: 10px;
+    padding-top: 10px;
   }
   .head-contact {
     display: none;
@@ -16,6 +16,7 @@
 
 //----------------MOBILE------------------
   @media screen and (min-width: 480px) {
+    
   }
 
 //----------------TABLET------------------
