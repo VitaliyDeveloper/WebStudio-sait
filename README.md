@@ -1,2 +1,6 @@
-# goit-markup-hw-08-2
- version 2
+# Web site IT Company
+
+# Stack
+- HTML
+- SASS
+
